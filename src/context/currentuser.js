@@ -26,7 +26,7 @@ function CurrentUserProvider({children}){
         
 
     getLoggedInUser()
-},  [setCurrentUser])
+},  [])
     
 
     return(
