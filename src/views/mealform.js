@@ -19,7 +19,7 @@ function Mealform(){
     const handleSubmit = async (e) => {
         e.preventDefault()
         try{
-            await fetch('https://serene-mesa-48537.herokuapp.com/meals', {
+            await fetch('https://dinediary.herokuapp.com/meals', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({   

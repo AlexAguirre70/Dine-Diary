@@ -14,7 +14,7 @@ function Login() {
           async function handleSubmit(e) { 
             e.preventDefault()
             try {
-                const response = await fetch('https://serene-mesa-48537.herokuapp.com/auth', {
+                const response = await fetch('https://dinediary.herokuapp.com/auth', {
                 method:'POST' , 
                 credentials:'include',
                 headers:{'Content-Type':"application/json"

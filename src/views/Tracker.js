@@ -19,7 +19,7 @@ function Tracker() {
                 start.setHours(0, 0, 0, 0);
                 const end = new Date(date);
                 end.setHours(23, 59, 59, 999);
-                fetch(`https://serene-mesa-48537.herokuapp.com/meals/${currentUser._id}/${start}/${end}`, {
+                fetch(`https://dinediary.herokuapp.com/meals/${currentUser._id}/${start}/${end}`, {
                     method: 'GET',
                     credentials: 'include',
                     headers: { 'Content-Type': 'application/json' }
@@ -43,7 +43,7 @@ function Tracker() {
     //delete route
     async function deletedMeal(id) {
         try { 
-            await fetch(`https://serene-mesa-48537.herokuapp.com/meals/${id}`, {
+            await fetch(`https://dinediary.herokuapp.com/meals/${id}`, {
                 method: 'DELETE'
             })  
             setUpdateMeals(true)

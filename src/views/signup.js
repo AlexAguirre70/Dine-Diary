@@ -10,7 +10,7 @@ const [passwordsignup,setpasswordsignup] = useState(null);
 const handleSubmit = async (e) => {
 e.preventDefault()
 try{
-        await fetch('https://serene-mesa-48537.herokuapp.com/', {
+        await fetch('https://dinediary.herokuapp.com/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
