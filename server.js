@@ -14,7 +14,7 @@ const { METHODS } = require('http');
 
 
 var corsOptions= {
-origin:'https://dinediaryfe.herokuapp.com/',
+origin:'https://dine-diaryfe.herokuapp.com/',
 methods:"GET, POST, DELETE, PUT",
 changeOrigin:true, 
 credentials:true
