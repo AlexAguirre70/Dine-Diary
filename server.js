@@ -14,7 +14,7 @@ const { METHODS } = require('http');
 
 
 var corsOptions= {
-origin:'https://serene-mesa-48537.herokuapp.com/',
+origin:'https://dinediaryfe.herokuapp.com/',
 methods:"GET, POST, DELETE, PUT",
 changeOrigin:true, 
 credentials:true
@@ -24,12 +24,12 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json())
 app.use(express.static('public'))
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+/*mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function() {
   console.log("Connected to MongoDB!");
-});
+});*/
 
 
 app.use("/", userRoutes);
