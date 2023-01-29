@@ -17,7 +17,8 @@ function Login() {
                 const response = await fetch('https://dinediary.herokuapp.com/auth', {
                 method:'POST' , 
                 credentials:'include',
-                headers:{'Content-Type':"application/json"
+                headers:{'Content-Type':"application/json",
+                'Access-Control-Allow-Origin': 'https://dine-diaryfe.herokuapp.com'
                 } ,
                 body:JSON.stringify({
                     useremail:emailLogin, 
