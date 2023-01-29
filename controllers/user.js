@@ -2,7 +2,7 @@ const user = require('../models/user');
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const checkJWT = require('../utils/auth');
+const checkJWT = require('./auth');
 
 // routes
 router.get('/', checkJWT ,async (req, res) => {

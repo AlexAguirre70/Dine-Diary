@@ -34,7 +34,7 @@ db.once("open", function() {
 app.options('*',cors());
 app.use("/", userRoutes);
 app.use("/meals",mealRoutes);
-app.use("/auth",require('./utils/auth.js'))
+app.use("/auth",require('./controllers/auth.js'))
 // Start the server
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
