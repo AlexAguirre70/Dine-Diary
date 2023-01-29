@@ -1,0 +1,13 @@
+h1{
+    color: blue;
+  }
+  
+  .clock-style{
+    position:absolute;
+    top:0;
+    margin-top: 16px;
+    margin-left: 16px;
+    left:0;
+    font-size: 25px;
+  }
+  

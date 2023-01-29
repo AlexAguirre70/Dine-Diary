@@ -1,0 +1,418 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #343228;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logout {
+    display: flex;
+  }
+  
+  #logout {
+    color: black;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 10px 6px 0px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .loginTitle {
+    font-size: 50px;
+    font-weight:lighter;
+    text-align: center;
+  }
+  
+  .loginInput {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .userInput {
+    font-size: 20px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 12px 250px 12px 12px;
+  }
+  
+  
+  #loginButton,
+   #signupButton{
+    color: black;
+    height: 40px;
+    width: 150px;
+    background-color: rgba(122, 174, 120, 0.892);
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  #signupButton:hover {
+    background-color: rgba(101, 162, 101, 0.396);
+    height: 43px;
+    width: 153px;
+    cursor: pointer;
+  }
+  
+  #loginButton:hover {
+    background-color: rgba(101, 162, 101, 0.396);
+    height: 43px;
+    width: 153px;
+    cursor: pointer;
+  }
+  
+  form {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  label {
+    font-size: 14px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .jumbo-style{
+    background-color: rgba(121, 141, 118, 0.483);
+    height: 310px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+  }
+  
+  .header-jumbo{
+    margin-top: 60px;
+    font-size: 23px;
+  
+  }
+  
+  .button-css{
+   margin-top: 160px;
+   color: black;
+  }
+  
+  .myWork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  
+  .allCards {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  .myWork a {
+    color: transparent;
+    text-decoration: none;
+  }
+  
+  .myWork a:hover {
+    color: white;
+  }
+  
+  .allCards{
+    color: transparent;
+  
+  }
+  
+  .allCards:hover {
+    color: black;
+  }
+  
+  .myWork a:visited {
+    color: white;
+  }
+  
+  .card1 {
+    height: 300px;
+    width: 300px;
+    border: 3px solid rgb(253, 253, 253);
+    margin-bottom: 30px;
+    background-image: url("/public/images/eating-health.jpeg");
+    background-size: cover;
+    margin-left: 20px;
+  }
+  
+  .card1:hover {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    background-image: url("/public/images/white-back.jpeg");
+    background-size: cover;
+  }
+  
+  .card2 {
+    height: 300px;
+    width: 300px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-bottom: 30px;
+    background-image: url("/public/images/calender.jpeg");
+    background-size: cover;
+  }
+  .card2:hover:hover {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    background-image: url("/public/images/white-back.jpeg");
+    background-size: cover;
+  }
+  
+  .card3 {
+    height: 300px;
+    width: 300px;
+    border: 3px solid white;
+    margin-bottom: 30px;
+    background-image: url("/public/images/woman-cooking.webp");
+    background-size: cover;
+    margin-right: 20px;
+  }
+  
+  .card3:hover:hover {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    background-image: url("/public/images/white-back.jpeg");
+    background-size: cover;
+  }
+  
+  .nav-links{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+  }
+  
+  .h1-fit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+  }
+  
+  .tracker-style,
+   .api-style{
+      margin-right: 150px;
+      text-decoration: none;
+      color: black;
+      border-radius: 2%; 
+      font-size: 20px;
+  }
+  
+  .profile{
+      text-decoration: none;
+      color: black;
+      border-radius: 2%;
+      font-size: 20px;
+  }
+  
+  .login-home{
+      text-decoration: none;
+      background-color: white;
+      font-size: 12px;
+      color: black;
+  }
+   .move-right{
+      margin-left: 50px;
+      background-color:white;
+   }
+  
+  .h1-fit{
+      font-size: 50px;
+  }
+  
+  .avocado{
+      height: 50px;
+      width: 50px;
+      margin-left: 20px;
+  }
+  
+  .h1-meal{
+    color: black;
+  }
+  
+  .avo-cardio{
+    float: right;
+    height: 400px;
+    width: 400px;
+    margin-top: 80px;
+  }
+  
+  .display-name{
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+  }
+  
+  .description{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+  }
+  
+  .datepicker {
+    font-size: 20px;
+    text-align: center;
+    }
+  
+  
+    .container {
+      display: flex;
+      align-items: center;
+     justify-content: center;
+    }
+    
+    .data-container {
+      display: flex;
+      flex-wrap: wrap;
+  
+    }
+    
+    .data-box {
+      width: 190px;
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+  }
+  
+  .form-label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+  }
+  
+  .form-input {
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      border: 1px solid #ccc;
+  }
+  
+  .style-logout{
+    margin-top: 15px;
+    margin-left: 15px;
+  
+  }
+  
+  .custom-button {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    place-items: center;
+  }
+  
+  .image-container, img{
+    height: 380px;
+    width: 380px;
+  }
+  
+  .recipe-style{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .styling-button{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 35px;
+  }
+  
