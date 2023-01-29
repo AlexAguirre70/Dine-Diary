@@ -31,7 +31,7 @@ db.once("open", function() {
   console.log("Connected to MongoDB!");
 });*/
 
-
+app.options('*',cors())
 app.use("/", userRoutes);
 app.use("/meals",mealRoutes);
 app.use("/auth",require('./utils/auth.js'))
