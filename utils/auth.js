@@ -1,7 +1,7 @@
 const jwt = require('json-web-token');
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User');
+const User = require('../models/user');
 const mongoose = require('mongoose');
 // secret key for signing JWT
 const secret = process.env.SECRET_JWT;
