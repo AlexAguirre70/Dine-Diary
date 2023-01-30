@@ -39,7 +39,6 @@ const checkJWT = (req, res, next) => {
 
 // POST route
 router.post("/", async(req,res) => {
-    console.log(req)
     const user = await User.findOne({ useremail : req.body.useremail });
     try {
         if (!user || req.body.userpassword !== user.userpassword){
