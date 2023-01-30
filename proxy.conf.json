@@ -1,7 +1,0 @@
-{
-    "/auth": {
-        "target": "https://dinediary.herokuapp.com",
-        "secure": false,
-        "changeOrigin": true
-    }
-}
