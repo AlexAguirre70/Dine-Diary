@@ -3,7 +3,7 @@ const dotenv = require('dotenv')
 const express = require('express')
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const userRoutes = require("./controllers/user.js");
+const userRoutes = require("./controllers/user");
 const app = express();
 const port = process.env.PORT;
 const uri = process.env.MONGO_URI;
@@ -34,7 +34,7 @@ db.once("open", function() {
 app.options('*',cors());
 app.use("/", userRoutes);
 app.use("/meals",mealRoutes);
-app.use("/auth",require('./controllers/auth.js'))
+app.use("/auth",require('./controllers/auth'))
 // Start the server
 app.listen(process.env.PORT || 5000, () => {
   console.log(`Server listening on port ${process.env.PORT || 5000}`);
