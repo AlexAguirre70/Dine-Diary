@@ -39,3 +39,13 @@ app.use("/auth",require('./controllers/auth'))
 app.listen(process.env.PORT || 5000, () => {
   console.log(`Server listening on port ${process.env.PORT || 5000}`);
 });
+
+/*
+Access to fetch at 
+'https://dinediary.herokuapp.com/auth/profile' 
+from origin 'https://dine-diaryfe.herokuapp.com' 
+has been blocked by CORS policy: No 'Access-Control-Allow-Origin' 
+header is present on the requested resource. 
+If an opaque response serves your needs, 
+set the request's mode to 'no-cors' to fetch 
+the resource with CORS disabled */
