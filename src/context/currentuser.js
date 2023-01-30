@@ -17,6 +17,7 @@ function CurrentUserProvider({children}){
             if (!response.ok) {
                 throw new Error(response.statusText);
             }
+            console.log(response)
             let user = await response.json()
             setCurrentUser(user)
         } catch (error) {
