@@ -11,26 +11,26 @@ function Login() {
     const [emailLogin, setemailLogin] = useState(null);
     const {setCurrentUser} = useContext(CurrentUser)
     const navigate = useNavigate()
-          async function handleSubmit(e) { 
-            e.preventDefault()
-            try {
-                const response = await fetch('https://dinediary.herokuapp.com/auth', {
-                method:'POST' , 
-                credentials:'include',
-                headers:{'Content-Type':"application/json",
-                'Access-Control-Allow-Origin': 'https://dine-diaryfe.herokuapp.com'
-                } ,
-                body:JSON.stringify({
-                    useremail:emailLogin, 
-                    userpassword:passwordLogin
-                })
+    async function handleSubmit(e) { 
+        e.preventDefault()
+        try {
+            const response = await fetch('https://dinediary.herokuapp.com/auth', {
+            method:'POST' , 
+            credentials:'include',
+            headers:{'Content-Type':"application/json",
+            'Access-Control-Allow-Origin': 'https://dine-diaryfe.herokuapp.com'
+            } ,
+            body:JSON.stringify({
+                useremail:emailLogin, 
+                userpassword:passwordLogin
             })
-            const data = await response.json()
-            if (response.status===200) {
-                setCurrentUser(data.user)
-                localStorage.setItem('token', data.token)
-                navigate('/tracker')
-            }
+        })
+        const data = await response.json()
+        if (response.status===200) {
+            setCurrentUser(data.user)
+            localStorage.setItem('token', data.token)
+            navigate('/tracker')
+        }
             
             
         
