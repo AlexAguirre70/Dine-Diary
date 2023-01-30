@@ -16,10 +16,10 @@ changeOrigin:true,
 credentials:true
 };
 app.use(cors(corsOptions));
+app.use(express.static('public'));
 app.use(express.urlencoded({extended:true}));
-app.use(express.json())
-app.use(express.static('public'))
-app.use(defineCurrentUser)
+app.use(express.json());
+app.use(defineCurrentUser);
 
 /*mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
@@ -31,7 +31,7 @@ db.once("open", function() {
 app.options('*',cors());
 app.use("/", userRoutes);
 app.use("/meals",mealRoutes);
-app.use("/auth",require('./controllers/auth'))
+app.use("/auth",require('./controllers/auth'));
 
 app.get('/', (req,res)=>{
   res.send(`Server running on port ${process.env.PORT}`)
