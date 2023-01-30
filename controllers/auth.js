@@ -5,7 +5,6 @@ const User = require('../models/user');
 const mongoose = require('mongoose');
 // secret key for signing JWT
 const secret = process.env.SECRET_JWT;
-app.use(cors(corsOptions));
 // GET route
 router.get('/profile', async (req, res) => {
     try {
@@ -19,7 +18,7 @@ router.get('/profile', async (req, res) => {
 
         }
     } catch{
-        res.json(null)
+        res.json(req)
     }
 });
     // middleware to check for valid JWT
