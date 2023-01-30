@@ -1,17 +1,15 @@
 require('dotenv').config()
-const express = require('express')
-const mongoose = require("mongoose");
-const userRoutes = require("./controllers/user");
-const app = express();
-const mealRoutes = require("./controllers/meals");
+const express = require('express');
 const cors = require('cors');
+const app = express();
+const mongoose = require("mongoose");
 const defineCurrentUser = require('./routes/defineuser')
-
-
+const mealRoutes = require("./controllers/meals");
+const userRoutes = require("./controllers/user");
 
 var corsOptions= {
 origin:'https://dine-diaryfe.herokuapp.com',
-methods:"GET, POST, DELETE, PUT, PATCH",
+methods:"GET,PUT,POST,DELETE,PATCH",
 changeOrigin:true, 
 credentials:true
 };
@@ -29,9 +27,9 @@ db.once("open", function() {
 });*/
 
 app.options('*',cors());
-app.use("/", userRoutes);
-app.use("/meals",mealRoutes);
 app.use("/auth",require('./controllers/auth'));
+app.use("/user", userRoutes);
+app.use("/meals",mealRoutes);
 
 app.get('/', (req,res)=>{
   res.send(`Server running on port ${process.env.PORT}`)
